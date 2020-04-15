@@ -26,6 +26,6 @@ jobs:
       env:
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         CHAT_ID:  ${{ secrets.CHAT_ID }}
-        CRAWLING_URL: $${{ secrets.CRAWLING_URL }}
+        CRAWLING_URL: ${{ secrets.CRAWLING_URL }}
       run: |
         python3 crawling_jobnotice.py
