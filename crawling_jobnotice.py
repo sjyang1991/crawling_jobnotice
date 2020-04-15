@@ -4,7 +4,7 @@ import json
 import datetime
 import time
 from config import CRAWLING_URL
-from Telegram_send import send
+from telegram_send import send
 
 #크롤링
 url = CRAWLING_URL
