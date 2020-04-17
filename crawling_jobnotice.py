@@ -27,7 +27,7 @@ if source['list'][0]['jobnoticeSn'] != recentNum:
     recentNum = source['list'][0]['jobnoticeSn']
     results = '----- 관심 채용 정보 -----\n\n'
     for row in source["list"]:
-     #   if row['jobnoticeName'].find('전산원') != -1 or row['jobnoticeName'].find('정보보안팀') != -1:
+     #   if row['jobnoticeName'].find('전산') != -1 or row['jobnoticeName'].find('정보보안') != -1:
      #       results += '전산원' + row['receiptState'] + '\n'
 
         if row['receiptState'] == '접수중' and (row['jobnoticeName'].find('전산원') != -1 or row['jobnoticeName'].find('정보보안팀') != -1) :
