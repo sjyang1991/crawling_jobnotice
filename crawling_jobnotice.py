@@ -22,9 +22,10 @@ results = ''
 i = 1
 recentNum = 0
 notice_up_yn = 0
-print('최근 게시물 번호'+str(recentNum))
+#print('최근 게시물 번호'+str(recentNum))
 if source['list'][0]['jobnoticeSn'] != recentNum:
     recentNum = source['list'][0]['jobnoticeSn']
+    print('최근 게시물 번호'+str(recentNum))
     results = '----- 관심 채용 정보 -----\n\n'
     for row in source["list"]:
      #   if row['jobnoticeName'].find('전산') != -1 or row['jobnoticeName'].find('정보보안') != -1:
