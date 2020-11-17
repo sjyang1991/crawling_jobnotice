@@ -41,5 +41,4 @@ if notice_up_yn == 1 :
 else :
     results += '전산 공고 없음\n'
 print(results)
-
-    
+ 
